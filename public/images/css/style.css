@@ -1,0 +1,39 @@
+body {
+    background-color: #EAC926;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.imagen {
+    width: 200px;
+    height:200px;
+}
+
+.burger-menu {
+    display: inline-block;
+    background-color: #1259c3;
+    color: white;
+    text-align: center;
+    
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.off {
+    font-size: 16px;
+}
+
+.cuotas{
+    text-align: center
+    ;
+}
