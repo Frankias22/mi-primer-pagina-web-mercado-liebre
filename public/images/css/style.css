@@ -1,10 +1,16 @@
 body {
+    background-color: #ebebeb;
+}
+
+header {
     background-color: #EAC926;
+    border-style: solid;
+    border-color: #EAC926;
+    margin: 0px -10px 0px -10px;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
     font-size: 12px;
 }
 
@@ -14,11 +20,20 @@ body {
 }
 
 .burger-menu {
-    display: inline-block;
     background-color: #1259c3;
     color: white;
     text-align: center;
-    
+    border-radius: 5px;
+    width: 25px;
+    margin: 0 auto;
+    }
+
+.fas {
+    text-align: center;
+}
+
+main {
+    background-color: white;
 }
 
 .titulares {
@@ -34,6 +49,43 @@ body {
 }
 
 .cuotas{
-    text-align: center
-    ;
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    color: #666;
+}
+
+.copy {
+    text-align: left;
+    font-size: 10px;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fa-user-shield {
+    font-size: 2em;
+    color: #0e67c6;
+    margin-bottom: 10px;
+}
+
+.fa-credit-card {
+    font-size: 2em;
+    color: #0e67c6;
+    margin-bottom: 10px;
+}
+
+.fa-gift {
+    font-size: 2em;
+    color: #0e67c6;
+    margin-bottom: 10px;
 }
