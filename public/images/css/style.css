@@ -1,91 +1,124 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
 body {
     background-color: #ebebeb;
 }
 
-header {
-    background-color: #EAC926;
-    border-style: solid;
-    border-color: #EAC926;
-    margin: 0px -10px 0px -10px;
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-}
-
-.imagen {
+.logo {
     width: 200px;
-    height:200px;
 }
 
-.burger-menu {
-    background-color: #1259c3;
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.header-search {
+    display: flex;
+}
+
+.header-input-search {
+    width: 100%;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    border: 3px solid #f5f5f5;
+    padding: 7px 60px 9px 15px;
+    justify-content: flex-end;
+    flex-grow: 0.5;
+    margin-left: 15px;
+}
+
+.hamburguer-button{
+    background-color: #03264C;
     color: white;
-    text-align: center;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
     border-radius: 5px;
-    width: 25px;
-    margin: 0 auto;
-    }
-
-.fas {
     text-align: center;
-}
-
-main {
-    background-color: white;
-}
-
-.titulares {
-    font-size: 24px;
-}
-
-.price {
     font-size: 18px;
+    margin: auto;    
 }
 
-.off {
-    font-size: 16px;
+.main-navbar {
+    display: none;
 }
 
-.cuotas{
-    text-align: center;
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
 }
 
-footer {
-    background-color: white;
-    text-align: center;
-    color: #666;
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
 }
 
-.copy {
-    text-align: left;
-    font-size: 10px;
+.main-banner {
+    width: 100%;
 }
 
-#bold {
-    font-weight: bold;
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
 }
 
-.negrita {
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.fa-user-shield {
-    font-size: 2em;
-    color: #0e67c6;
-    margin-bottom: 10px;
-}
-
-.fa-credit-card {
-    font-size: 2em;
-    color: #0e67c6;
-    margin-bottom: 10px;
-}
-
-.fa-gift {
-    font-size: 2em;
-    color: #0e67c6;
-    margin-bottom: 10px;
+@media (min-width: 1200px) {
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar {
+        align-items: center;
+    }
+    .main-navbar { 
+        margin-top: 25px;
+    }   
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    .copy-header {
+        margin: 0;
+        max-width: none;
+        text-align: right;
+        font-weight: 400;
+        font-size: 25px;
+    }
+    .logo {
+        width: 250px;
+    }
 }
