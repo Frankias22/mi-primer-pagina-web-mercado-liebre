@@ -7,8 +7,9 @@ const publicPath = path.resolve(__dirname , "./public");
 
 app.use (express.static (publicPath));
 
-app.listen (3000, () => 
-    console.log("Servidor corriendo en Puerto 3000")
+const port = process.env.PORT || 3000;
+app.listen (port, () => 
+    console.log("Servidor corriendo en Puerto "+port)
 );
 
 app.get("/", (req,res)=>{
@@ -18,8 +19,9 @@ app.get("/", (req,res)=>{
 app.get("/register", (req,res)=>{
     res.sendFile(path.resolve(__dirname, "./views/register.html"))
 });
+
 app.post("/registro", (req,res)=>{
-    res.send("Registrado de manera exitosa.")
+    res.send("¡Registro exitoso!.")
 });
 
 app.get("/login", (req,res)=>{
